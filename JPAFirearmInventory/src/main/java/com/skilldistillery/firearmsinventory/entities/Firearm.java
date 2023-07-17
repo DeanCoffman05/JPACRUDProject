@@ -14,6 +14,12 @@ public class Firearm {
 	
 	@Column(name="serial_number")
 	private String serialNumber;
+	
+	private String manufacturer;
+	private String model;
+	private String caliber;
+	private String value;
+	
 
 	public Firearm() {
 		super();
@@ -35,10 +41,44 @@ public class Firearm {
 		this.serialNumber = serialNumber;
 	}
 
+	public String getManufacturer() {
+		return manufacturer;
+	}
+
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public String getCaliber() {
+		return caliber;
+	}
+
+	public void setCaliber(String caliber) {
+		this.caliber = caliber;
+	}
+
+	public String getValue() {
+		return value;
+	}
+
+	public void setValue(String value) {
+		this.value = value;
+	}
+
 	@Override
 	public String toString() {
-		return "Firearm [id=" + id + ", serialNumber=" + serialNumber + "]";
+		return "Firearm [id=" + id + ", serialNumber=" + serialNumber + ", manufacturer=" + manufacturer + ", model="
+				+ model + ", caliber=" + caliber + ", value=" + value + "]";
 	}
+
 	
 	
 }
